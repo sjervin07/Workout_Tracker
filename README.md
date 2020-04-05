@@ -1,1 +1,1 @@
-# Workout_Tracker
+This is a simple workout tracker that will allow users to add in a daily workout and track it- either continuing with the exercise or adding a new one.
