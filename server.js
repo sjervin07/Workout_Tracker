@@ -16,7 +16,7 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-const db = process.env.MONGODB_URL;
+const db = process.env.MONGODB_URI;
 
 const connectDB = async () => {
   try {
@@ -40,7 +40,7 @@ corsOptions = {
 app.use(cors(corsOptions));
 
 // routes
-app.use(require("./routes/api.js"));
+app.use(require("./routes/apiRoutes.js"));
 app.use(require("./routes/view.js"));
 
 app.listen(PORT, () => {
